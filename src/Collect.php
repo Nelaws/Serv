@@ -80,9 +80,4 @@ class Collect
        array_splice($idx, $length);
        return $this;
    }
-
-   public function phone($value)
-   {
-        return preg_replace('/^(\d{3})(\d{3})(\d{2})(\d{2})$/iu', '+7 ($1) $2-$3-$4', $value)
-   }
 }
